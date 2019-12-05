@@ -246,3 +246,207 @@ background: #e2534b;
     transform:translate(-50%,50%);
     transition:0.5s;
 }
+/*============section choice
+==============================*/
+.choice-inner{
+    margin-bottom:30px;
+}
+.choice-gallery{
+    margin-bottom:90px;
+}
+.choice-intro-title{
+    font-size:40px;
+    font-weight:600;
+    line-height:1.2;
+    color:#e1524b;
+}
+.choice-intro-subtitle{
+    color:#777;
+    margin-bottom:100px;
+}
+.choice-gallery-item{
+    margin-bottom:15px;
+    transform:scale(1);
+    transition:1s;
+}
+.choice-gallery-item-inner{
+    padding:15px 5px 5px;
+    background: #c1c7c8;
+    border-radius:7px;
+    position:relative;
+    transform:scale(1);
+    transition:1s;
+}
+.choice-gallery-item:hover{
+    transform:scale(1.5);
+    z-index:10;
+}
+.choice-gallery-item:first-child:hover{
+    transform:scale(1.5) translateX(15%);
+}
+.choice-gallery-item:last-child:hover{
+    transform:scale(1.5) translateX(-15%);
+}
+.choice-gallery-item-border{
+    position:relative;
+    margin-left:25px;
+    margin-bottom:15px;
+}
+.choice-gallery-item-border,
+.choice-gallery-item-border::before,
+.choice-gallery-item-border::after,
+.choice-gallery-item-inner:after{
+    background: #ececec;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+}
+.choice-gallery-item-border::before,
+.choice-gallery-item-border::after,
+.choice-gallery-item-inner:after{
+    content:'';
+    position:absolute;
+    top:0;
+}
+.choice-gallery-item-inner:after{
+    height:8px;
+    border-radius:35%;
+    right:15px;
+    top:15px;
+}
+.choice-gallery-item-border::before{
+    left:-135%;
+}
+.choice-gallery-item-border::after{
+    right:-135%;
+}
+.choice-gallery img{
+    width:100%;
+    border-radius:8px;
+}
+/*===========Review and statistics
+=================================*/
+.choice-clients-why,
+.choice-clients-content,
+.choice-clients-what{
+    margin-bottom:15px;
+}
+/*==============Aside right*/
+.aside-title{
+    font-weight:800;
+    font-size:16px;
+    line-height:1.2;
+    color:#7f8c8c;
+    margin-bottom:30px;
+}
+.choice-clients-why-plus{
+    margin:0;
+    padding:0;
+}
+.choice-clients-why-plus-item{
+    list-style:none;
+    margin-bottom:12px;
+    padding-left:18px;
+    position:relative;
+}
+.choice-clients-why-plus-item:before{
+    content:'';
+    position:absolute;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/aside-why-arrow.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+}
+.choice-clients-why-plus-item a{
+    color:#777;
+}
+.choice-clients-why-plus-item a:hover{
+    text-decoration:none;
+}
+/*============Content statistic
+===============================*/
+.choice-clients-content{
+    margin-bottom:25px;
+}
+.choice-clients-content-text{
+    line-height:1.9;
+    margin-bottom:65px;
+}
+.choice-clients-content-text a{
+    color:#e1524b;
+}
+.choice-clients-content-text a:hover{
+    text-decoration: underline;
+}
+/*==========Circle rate=====
+=============================*/
+.circle-wrapper{
+    width:125px;
+    height:62.5px;
+    overflow:hidden;
+    margin-bottom:20px;
+    position:relative;
+}
+.circle-rate{
+    width:125px;
+    height:125px;
+    border-radius:50%;
+    border:18px solid #76c7c0;
+    border-left:18px solid #e2534b;
+    border-top:18px solid #e2534b;
+    transform:rotate(-45deg);
+}
+.clients-statistic-item:nth-child(2) .circle-rate{
+    transform:rotate(-5deg);
+}
+.clients-statistic-item:nth-child(3) .circle-rate{
+    transform:rotate(10deg);
+}
+.clients-statistic-item:nth-child(4) .circle-rate{
+    transform:rotate(45deg);
+}
+.clients-statistic-item-title{
+    font-size:16px;
+    font-weight:800;
+    color:#7f8c8c;
+    text-transform: uppercase;
+}
+.circle-text{
+    font-size:30px;
+    font-weight:800;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%,-78%);
+}
+/*===============Aside What say
+===============================*/
+.clients-review-text{
+    background: #f8f8f8;
+    font-style:italic;
+    line-height:2;
+    padding:10px;
+    border-radius:7px;
+    position:relative;
+    margin-bottom:2px;
+}
+.clients-review-text:before{
+    content:'';
+    position:absolute;
+    border-top:10px solid #f8f8f8;
+    border-right:10px solid #f8f8f8;
+    border-bottom:10px solid transparent;
+    border-left:10px solid transparent;
+    bottom:0;
+    transform:translate(50%,100%);
+}
+.clients-review-author{
+    padding-left:55px;
+    font-size:16px;
+    font-weight:600;
+    color:#777;
+}
