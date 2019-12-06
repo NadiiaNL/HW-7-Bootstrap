@@ -488,7 +488,7 @@ background: #e2534b;
     content:'';
     position:absolute;
     top:7px;
-    left:15%;
+    left:155px;
     background-color: #e1e2e2;
     width:7px;
     height:7px;
@@ -498,10 +498,14 @@ background: #e2534b;
     content:'';
     position:absolute;
     top:10px;
-    left:15%;
+    right:120px;
     height:1px;
-    width:74%;
+    width:calc(100% - 280px);
     background-color: #e1e2e2;
+}
+.grey-line{
+     height:1px;
+     background-color: #e1e2e2;
 }
 .clients .carousel-img-wrapper{
     width:170px;
