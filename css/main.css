@@ -121,14 +121,14 @@ body,html{
     width:100%;
     height:100%;
 }
-.carousel-caption{
+.intro .carousel-caption{
     bottom:30%;
 }
-.carousel-caption h5,
-.carousel-caption p{
+.intro .carousel-caption h5,
+.intro .carousel-caption p{
     border-radius:8px;
 }
-.carousel-caption h5{
+.intro .carousel-caption h5{
     font-size:50px;
     text-transform: uppercase;
     font-weight:800;
@@ -136,28 +136,28 @@ body,html{
     background: #e2534b;
     margin-bottom:10px;
 }
-.carousel-caption p{
+.intro .carousel-caption p{
     max-width:470px;
     font-size:16px;
     line-height:1.6;
     background: #3f4646;
     padding:15px 20px; 
 }
-.carousel-indicators{
+.intro .carousel-indicators{
     bottom:-15%;
 }
-.carousel-indicators li{
+.intro .carousel-indicators li{
     background-color: #b0b8b9;
     opacity:1;
     transition: background .6s ease;
     width:60px;
     height:5px;
 }
-.carousel-indicators li.active{
+.intro .carousel-indicators li.active{
     background-color: #e2534b;
 }
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
+.intro .carousel-control-prev-icon,
+.intro .carousel-control-next-icon{
 background: #e2534b;
     width:48px;
     height:60px;
@@ -165,10 +165,10 @@ background: #e2534b;
     border-radius:5px;
     background-repeat: no-repeat;    
 }
-.carousel-control-prev-icon{
+.intro .carousel-control-prev-icon{
     background-image: url('../img/prev-slider-icon.png');
 }
-.carousel-control-next-icon{
+.intro .carousel-control-next-icon{
     background-image: url('../img/next-slider-icon.png');
 }
 /*==============Section services
@@ -250,8 +250,22 @@ background: #e2534b;
 }
 /*============section choice
 ==============================*/
-.choice-inner{
-    margin-bottom:30px;
+.choice{
+    position:relative;
+    padding-bottom:30px;
+}
+.choice-wrapper:before{
+    content:'';
+    width:100%;
+    height:70%;
+    position:absolute;
+    background-color:#ececec;
+    top:0;
+    left:0;
+}
+.choice-wrapper{
+    padding-top:70px;
+    position:relative;
 }
 .choice-gallery{
     margin-bottom:90px;
@@ -453,7 +467,79 @@ background: #e2534b;
     font-weight:600;
     color:#777;
 }
-
+/*=============Our happy clients
+===============================*/
+.clients{
+/*    background-color:#000;*/
+    padding-top:20px;
+    padding-bottom:50px;
+}
+.clients-inner{
+    position:relative;
+     min-height:100px;
+}
+.clients-header-title{
+    margin-bottom:45px;
+}
+.clients-header{
+    position:relative;
+}
+.clients-header:before{
+    content:'';
+    position:absolute;
+    top:7px;
+    left:15%;
+    background-color: #e1e2e2;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+}
+.clients-header:after{
+    content:'';
+    position:absolute;
+    top:10px;
+    left:15%;
+    height:1px;
+    width:74%;
+    background-color: #e1e2e2;
+}
+.clients .carousel-img-wrapper{
+    width:170px;
+    height:90px;
+    background-color: #f8f8f8;
+    border-radius:7px;
+    position:relative;
+}
+.clients .carousel-img-wrapper img{
+    max-width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+.clients .carousel-control-prev,
+.clients .carousel-control-next{
+    height:40px;
+    top:-77%;
+    width:40px;
+    background-color:#98a3a3;
+    border-radius:7px;
+    opacity:1;
+    transition:.8s;
+}
+.clients .carousel-control-prev{
+    left:100%;
+    transform:translateX(-250%);
+}
+.clients .carousel-control-prev:hover,
+.clients .carousel-control-next:hover{
+   background-color: #e2534b;
+}
+/*
+.clients .carousel-control-next{
+    right:5%;
+}
+*/
 /*=============Footer=====
 ===========================*/
 .footer-wrapper{
@@ -461,10 +547,24 @@ background: #e2534b;
     padding-top:45px;
     padding-bottom:40px;
 }
-
+.footer{
+     position:relative;
+}
 .footer,
 .footer a{
     color:#fff;
+}
+.border-line:before{
+    content:'';
+    width:100%;
+    height:19px;
+    background-image:url('../img/section-border-bg.png');
+    background-repeat: repeat-x;
+    background-position:center;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:6;
 }
 /*========footer-logo
 ==========================*/
@@ -566,5 +666,5 @@ background: #e2534b;
     background-color:transparent;
     border:none;
     margin-left:5px;
-    outline:none;
+    outline:0;
 }
