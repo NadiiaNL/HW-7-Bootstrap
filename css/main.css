@@ -66,7 +66,7 @@ html {
     left: 12px;
 }
  .nav-item.btn-group {
-        display: block;
+    display: block;
  }
 .dropdown-menu {
     padding: 7px;
@@ -226,10 +226,6 @@ mark{
     color: #777;
     line-height: 1.6;
 }
-.services-link {
-   padding-left:45px;
-}
-
 .services-btn {
     background: #e8645a;
     border: 0;
@@ -238,6 +234,7 @@ mark{
     text-transform: uppercase;
     font-weight: 600;
     padding: 10px 35px;
+    width:200px;
 }
 
 
