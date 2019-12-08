@@ -292,7 +292,14 @@ mark{
     transform: translate(-50%, 50%);
     transition: 0.5s;
 }
-
+.services-icon{
+    fill:#62bdbd;
+    height:70px;
+    transition:0.8s;
+}
+.services-block .card:hover .services-icon{
+    fill:#e2534b;
+}
 
 /*============section choice
 ==============================*/
