@@ -566,13 +566,9 @@ mark{
     font-weight: 600;
     color: #777;
 }
-
-
 /*=============Our happy clients
 ===============================*/
-
 .clients {
-    /*    background-color:#000;*/
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -580,10 +576,6 @@ mark{
 .clients-inner {
     position: relative;
     min-height: 100px;
-/*
-    margin-left:-7px;
-    margin-right:-7px;
-*/
 }
 
 .clients-header-title {
@@ -857,9 +849,6 @@ mark{
     }
     .choice-gallery-item:last-child:hover {
         transform: scale(1.5) translateX(-15%);
-    }
-    .dropdown-toggle::after {
-        background-image: url('../img/toggle-down.png');
     }
     .clients-statistic {
     flex-wrap:nowrap;
