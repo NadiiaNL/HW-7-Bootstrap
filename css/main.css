@@ -305,13 +305,14 @@ mark{
 }
 .services-icon{
     height:70px;
-    transition:0.8s;
+    transition:.8s;
     margin-bottom:10px;
 }
 .services-icon:before{
     color:#62bdbd;
     font-family: 'icomoon';
     font-size:65px;
+    transition:.8s;
     
 }
 .hand-icon:before{
