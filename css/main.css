@@ -57,12 +57,12 @@ html {
 
 .dropdown-toggle::after {
     border: 0;
-    height: 5px;
-    width: 8px;
-    background-image: url('../img/toggle-down.png');
-    background-repeat: no-repeat;
+    content:"\f107";
+    font-family: 'icomoon';
+    color:#fff;
+    font-size:14px;
     position: absolute;
-    top: 15px;
+    top: 9px;
     left: 12px;
 }
  .nav-item.btn-group {
@@ -110,19 +110,30 @@ html {
 }
 
 .dropdown-item::before {
-    content: "";
-    width: 8px;
-    height: 5px;
-    background-image: url('../img/toggle-down.png');
-    background-repeat: no-repeat;
+    content: "\f105";
     position: absolute;
-    top: 40%;
+    font-family:'icomoon';
+    color:#fff;
+    top: 20%;
     left: 11px;
-    transform: rotate(-90deg);
 }
 
 .dropdown-item:last-child {
     margin-bottom: 0;
+}
+.nav-search{
+    position:relative;
+}
+.nav-search:before{
+    content:"\f002";
+    font-family: 'icomoon';
+    color:#fff;
+    font-size:16px;
+    line-height:1;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%);
 }
 /*========Section into-caurousel
 ================================*/
@@ -142,6 +153,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
+    color:#fff;
 }
 
 .intro .carousel-caption {
@@ -189,22 +201,22 @@ mark{
 
 .intro .carousel-control-prev-icon,
 .intro .carousel-control-next-icon {
-    background: #e2534b;
+    background: #e8645a;
     width: 48px;
     height: 60px;
-    background-position: center;
+    font-family: 'icomoon';
+    font-size:40px;
+    border-bottom:2px solid #e2534b;
     border-radius: 5px;
-    background-repeat: no-repeat;
 }
 
-.intro .carousel-control-prev-icon {
-    background-image: url('../img/prev-slider-icon.png');
+.intro .carousel-control-prev-icon:before{
+    content: "\f100";
 }
 
-.intro .carousel-control-next-icon {
-    background-image: url('../img/next-slider-icon.png');
+.intro .carousel-control-next-icon:before{
+    content:"\f101";
 }
-
 
 /*==============Section services
 ================================*/
@@ -236,7 +248,6 @@ mark{
     padding: 10px 35px;
     width:200px;
 }
-
 
 /*===========Services cards
 ============================*/
@@ -293,14 +304,31 @@ mark{
     transition: 0.5s;
 }
 .services-icon{
-    fill:#62bdbd;
     height:70px;
     transition:0.8s;
+    margin-bottom:10px;
 }
-.services-block .card:hover .services-icon{
-    fill:#e2534b;
+.services-icon:before{
+    color:#62bdbd;
+    font-family: 'icomoon';
+    font-size:65px;
+    
 }
-
+.hand-icon:before{
+   content: "\f087";
+}
+.key-icon:before{
+    content: "\f084";
+}
+.flag-icon:before{
+   content: "\f024";
+}
+.colb-icon:before{
+   content: "\f0c3";
+}
+.services-block .card:hover .services-icon:before{
+    color:#e2534b;
+}
 /*============section choice
 ==============================*/
 
@@ -441,13 +469,11 @@ mark{
 }
 
 .choice-clients-why-plus-item:before {
-    content: '';
+    content: "\f061";
     position: absolute;
-    width: 15px;
-    height: 15px;
-    background-image: url('../img/aside-why-arrow.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    color:#e1524b;
+    font-family: 'icomoon';
+    font-size:12px;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
@@ -745,11 +771,9 @@ mark{
 .footer-menu-item:before {
     content: '';
     position: absolute;
-    width: 9px;
-    height: 11px;
-    background-image: url('../img/footer-menu-arrow.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    content: "\f105";
+    font-family: 'icomoon';
+    font-size:14px;
     left: -15px;
     top: 50%;
     transform: translateY(-50%);
