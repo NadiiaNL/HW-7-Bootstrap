@@ -278,6 +278,7 @@ mark {
 .services-block .card:hover .btn-blue {
 	background: #e8645a;
 	border-bottom: 3px solid #e2534b;
+	color: #fff;
 }
 
 .services-block .card-img-top {
